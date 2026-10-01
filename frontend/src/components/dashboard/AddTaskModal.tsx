@@ -43,7 +43,9 @@ export const AddTaskModal: React.FC<AddTaskModalProps> = ({ isOpen, onClose, onS
           onClick={onClose}
           className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors cursor-pointer text-sm w-7 h-7 flex items-center justify-center rounded-full hover:bg-slate-100"
         >
-          <i className="fas fa-xmark"></i>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
         </button>
 
         <div className="mb-5">

@@ -13,8 +13,8 @@ export default {
         olive: '#8C8851',
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
-        sans: ['Montserrat', 'system-ui', 'sans-serif']
+        mono: ['Montserrat', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif']
       }
     },
   },

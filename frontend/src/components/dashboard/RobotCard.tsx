@@ -17,7 +17,7 @@ export const RobotCard: React.FC<RobotCardProps> = ({
 }) => {
   if (!robot) {
     return (
-      <div className="bg-slate-50 rounded-xl p-5 text-center text-slate-400 text-xs font-sans">
+      <div className="bg-[#F0F5F8] rounded-xl p-5 text-center text-slate-400 text-xs font-sans">
         Select a robot on the grid to view details.
       </div>
     );
@@ -61,23 +61,23 @@ export const RobotCard: React.FC<RobotCardProps> = ({
 
       {/* Key Metrics */}
       <div className="grid grid-cols-3 gap-2">
-        <div className="bg-white/70 rounded-lg p-2">
+        <div className="bg-white/70 rounded-lg p-2.5">
           <span className="text-[10px] text-slate-400 block">Position</span>
           <span className="text-[#212121] font-bold text-sm font-mono">
             {robot.position_x},{robot.position_y}
           </span>
         </div>
-        <div className="bg-white/70 rounded-lg p-2">
+        <div className="bg-white/70 rounded-lg p-2.5">
           <span className="text-[10px] text-slate-400 block">Goal</span>
           <span className="text-[#212121] font-bold text-sm font-mono">
             {robot.target_x !== null ? `${robot.target_x},${robot.target_y}` : '—'}
           </span>
         </div>
-        <div className="bg-white/70 rounded-lg p-2">
+        <div className="bg-white/70 rounded-lg p-2.5">
           <span className="text-[10px] text-slate-400 block">Battery</span>
           <span className="text-[#212121] font-bold text-sm font-mono">{robot.battery.toFixed(0)}%</span>
           <div className="mt-1 bg-slate-200 h-1 rounded-full overflow-hidden">
-            <div className="h-full bg-slate-600 rounded-full" style={{ width: `${robot.battery}%` }} />
+            <div className="h-full bg-slate-700 rounded-full" style={{ width: `${robot.battery}%` }} />
           </div>
         </div>
       </div>

@@ -74,8 +74,7 @@ export const Dashboard: React.FC = () => {
       <div className="pt-[67px]">
         <HeroEssenceBanner
           title="Autonomous Mobile Robot Fleet Coordination"
-          subtitle="Software-only simulation of multi-agent space-time reservations, dynamic conflict resolution, and task reallocation (SIH26123)."
-          badgeText="SPACE-TIME RESERVATION • SIH26123"
+          subtitle="Software-only simulation of multi-agent space-time reservations, dynamic conflict resolution, and task reallocation."
           onRunDemo={runDemo}
           robotCount={robots.length}
         />

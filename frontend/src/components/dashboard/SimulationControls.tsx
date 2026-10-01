@@ -84,7 +84,7 @@ export const SimulationControls: React.FC<SimulationControlsProps> = ({
         <button
           onClick={() => onReset('DISTRIBUTED')}
           className={`px-2.5 py-1 text-xs font-mono rounded-md transition-colors cursor-pointer ${
-            !isBaseline ? 'bg-[#102E39] text-white font-bold' : 'text-slate-500 hover:bg-slate-100'
+            !isBaseline ? 'bg-slate-800 text-white font-bold' : 'text-slate-500 hover:bg-slate-100'
           }`}
         >
           Distributed
@@ -97,7 +97,7 @@ export const SimulationControls: React.FC<SimulationControlsProps> = ({
           onClick={onToggleBlockMode}
           className={`px-3 py-1.5 text-xs font-mono rounded-lg transition-colors cursor-pointer ${
             blockModeActive
-              ? 'bg-red-500 text-white font-bold'
+              ? 'bg-[#FF471D] text-white font-bold'
               : 'bg-white hover:bg-slate-100 text-slate-700'
           }`}
         >

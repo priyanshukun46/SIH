@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +9,13 @@
   --color-charcoal: #212121;
 }
 
+*, html, body, #root {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 body {
   background-color: #FFFFFF;
   color: #212121;
-  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;

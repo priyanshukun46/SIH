@@ -78,7 +78,9 @@ export const ResQWayHeader: React.FC<ResQWayHeaderProps> = ({
                   }`}
                 >
                   <span className="font-semibold text-sm">Operational Fleet</span>
-                  <i className="fas fa-chevron-down text-[9px] text-white/70 ml-1"></i>
+                  <svg className="w-2.5 h-2.5 text-white/70 ml-1" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </button>
 
                 {openDropdown === 'operational' && (
@@ -138,7 +140,9 @@ export const ResQWayHeader: React.FC<ResQWayHeaderProps> = ({
                   }`}
                 >
                   <span className="font-semibold text-sm">Tactical Coordination</span>
-                  <i className="fas fa-chevron-down text-[9px] text-white/70 ml-1"></i>
+                  <svg className="w-2.5 h-2.5 text-white/70 ml-1" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </button>
 
                 {openDropdown === 'tactical' && (
@@ -183,7 +187,9 @@ export const ResQWayHeader: React.FC<ResQWayHeaderProps> = ({
                   }`}
                 >
                   <span className="font-semibold text-sm">Insights and Simulations</span>
-                  <i className="fas fa-chevron-down text-[9px] text-white/70 ml-1"></i>
+                  <svg className="w-2.5 h-2.5 text-white/70 ml-1" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </button>
 
                 {openDropdown === 'insights' && (

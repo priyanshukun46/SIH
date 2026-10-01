@@ -65,7 +65,6 @@ export const SimulationPage: React.FC = () => {
         <HeroEssenceBanner
           title="30x20 Space-Time Simulation Floor"
           subtitle="Full-screen spatial visualization of autonomous mobile robots and dynamic blocked corridors."
-          badgeText="INTERACTIVE 2D FLOOR MAP • SIH26123"
           onRunDemo={runDemo}
           robotCount={robots.length}
         />
@@ -86,7 +85,7 @@ export const SimulationPage: React.FC = () => {
           onRunDemo={runDemo}
         />
 
-        <div className="flex-1 border border-slate-200 rounded-none bg-white p-2 flex items-center justify-center shadow-none">
+        <div className="flex-1 rounded-xl bg-white p-2 flex items-center justify-center">
           {warehouse && (
             <WarehouseCanvas
               warehouse={warehouse}

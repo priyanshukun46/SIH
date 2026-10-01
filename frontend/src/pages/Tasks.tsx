@@ -39,7 +39,6 @@ export const TasksPage: React.FC = () => {
         <HeroEssenceBanner
           title="Warehouse Task Fulfillment &amp; Allocation"
           subtitle="Real-time order queue with dynamic cost-matrix task dispatch and autonomous reassignment."
-          badgeText="DYNAMIC DISPATCH • SIH26123"
           onRunDemo={runDemo}
           robotCount={robots.length}
         />

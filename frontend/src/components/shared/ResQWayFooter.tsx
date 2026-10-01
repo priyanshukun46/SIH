@@ -135,7 +135,10 @@ export const ResQWayFooter: React.FC = () => {
             <p className="text-xs font-bold uppercase tracking-wider text-white">Deployment Mode</p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-slate-300">
-                <i className="fas fa-microchip text-sm text-[#FF471D]"></i>
+                <svg className="w-4 h-4 text-[#FF471D]" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                  <rect width="14" height="14" x="5" y="5" rx="2" />
+                  <path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4" />
+                </svg>
                 <span className="font-medium">Software-Only Sim</span>
               </div>
 
@@ -150,7 +153,9 @@ export const ResQWayFooter: React.FC = () => {
                   <option value="Headless Benchmark">Headless Benchmark</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-slate-400">
-                  <i className="fas fa-chevron-down text-[10px]"></i>
+                  <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
                 </div>
               </div>
             </div>

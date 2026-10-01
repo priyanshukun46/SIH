@@ -61,14 +61,16 @@ export const WarehouseCanvas: React.FC<WarehouseCanvasProps> = ({
     <div className="relative w-full h-full flex flex-col items-center justify-center p-2 bg-white select-none overflow-hidden font-sans">
       {/* Block mode hint banner */}
       {blockModeActive && (
-        <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-20 bg-[#FF471D] text-white px-4 py-1.5 rounded-none text-xs font-mono flex items-center gap-2 shadow-none">
-          <i className="fas fa-triangle-exclamation text-xs"></i>
+        <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-20 bg-[#FF471D] text-white px-4 py-1.5 rounded-lg text-xs font-mono flex items-center gap-2 shadow-sm">
+          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+          </svg>
           <span>Click any aisle tile to place a blockage</span>
         </div>
       )}
 
       {/* SVG Canvas Container */}
-      <div className="relative border border-slate-200 rounded-none bg-white shadow-none p-2 overflow-auto max-w-full max-h-[75vh]">
+      <div className="relative rounded-xl bg-slate-50 p-2 overflow-auto max-w-full max-h-[75vh]">
         <svg
           width={svgWidth}
           height={svgHeight}
@@ -452,27 +454,27 @@ export const WarehouseCanvas: React.FC<WarehouseCanvasProps> = ({
         </svg>
       </div>
 
-      {/* Legend & Telemetry Bar (Minimal white, straight edges, no shadow) */}
-      <div className="mt-3 flex items-center justify-between w-full max-w-4xl px-4 py-2 bg-white border border-slate-200 rounded-none text-xs font-mono text-slate-600 shadow-none">
+      {/* Legend & Telemetry Bar */}
+      <div className="mt-3 flex items-center justify-between w-full max-w-4xl px-4 py-2 bg-slate-50 rounded-xl text-xs font-mono text-slate-600">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 bg-[#F1F5F9] border border-slate-300 inline-block rounded-none"></span>
+            <span className="w-2.5 h-2.5 bg-slate-200 inline-block rounded-full"></span>
             <span>Shelf Rack</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 bg-[#EFF6FF] border border-blue-300 inline-block rounded-none"></span>
+            <span className="w-2.5 h-2.5 bg-blue-400 inline-block rounded-full"></span>
             <span>Pickup</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 bg-[#FAF5FF] border border-purple-300 inline-block rounded-none"></span>
+            <span className="w-2.5 h-2.5 bg-purple-400 inline-block rounded-full"></span>
             <span>Dropoff</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 bg-[#F0FDF4] border border-emerald-300 inline-block rounded-none"></span>
+            <span className="w-2.5 h-2.5 bg-emerald-400 inline-block rounded-full"></span>
             <span>Charging</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 bg-[#FEE2E2] border border-red-300 inline-block rounded-none"></span>
+            <span className="w-2.5 h-2.5 bg-[#FF471D] inline-block rounded-full"></span>
             <span>Blocked</span>
           </div>
         </div>

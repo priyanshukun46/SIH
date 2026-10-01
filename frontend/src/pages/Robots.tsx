@@ -25,7 +25,6 @@ export const RobotsPage: React.FC = () => {
         <HeroEssenceBanner
           title="Autonomous Mobile Robot Fleet Roster"
           subtitle="Spatial telemetry, battery state, and active mission assignments for deployed AMR units."
-          badgeText="MULTI-AGENT FLEET TELEMATICS • SIH26123"
           onRunDemo={runDemo}
           robotCount={robots.length}
         />

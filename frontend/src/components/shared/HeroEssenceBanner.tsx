@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 interface HeroEssenceBannerProps {
   title?: string;
   subtitle?: string;
-  badgeText?: string;
   onRunDemo?: () => void;
   robotCount?: number;
 }
@@ -12,7 +11,6 @@ interface HeroEssenceBannerProps {
 export const HeroEssenceBanner: React.FC<HeroEssenceBannerProps> = ({
   title = "AMR Fleet Coordinator",
   subtitle = "Multi-agent path planning with dynamic conflict resolution.",
-  badgeText = "SIH26123",
   onRunDemo,
   robotCount = 5
 }) => {
@@ -41,10 +39,6 @@ export const HeroEssenceBanner: React.FC<HeroEssenceBannerProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
 
             <div className="lg:col-span-8 space-y-3">
-              <span className="text-[11px] font-mono font-bold tracking-wider text-[#FF471D] uppercase">
-                {badgeText}
-              </span>
-
               <h1 className="text-2xl sm:text-3xl font-black tracking-tight">
                 {title}
               </h1>

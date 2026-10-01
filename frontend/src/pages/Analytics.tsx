@@ -119,7 +119,6 @@ export const AnalyticsPage: React.FC = () => {
         <HeroEssenceBanner
           title="Comparative Coordination Benchmarks"
           subtitle="Empirical evaluation comparing traditional Stop-and-Wait Baseline against Distributed Space-Time Coordination."
-          badgeText="BENCHMARK ENGINE • SIH26123"
           onRunDemo={runDemo}
           robotCount={robots.length}
         />
